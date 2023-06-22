@@ -1,13 +1,163 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.myself {
+  margin-left: 289px;
+  margin-top: 95px;
+  border-radius: 50%;
+}
+
+.right {
+  position: absolute;
+  margin-left: 600px;
+  margin-top: -200px;
+  width: 30%;
+  text-align: justify;
+}
+
+.moscow_transport {
+  position: absolute;
+  top: 14px;
+  left: 200px;
+}
+
+.moscow_transport2 {
+  position: absolute;
+  margin-top: 750px;
+  margin-left: -300px;
+}
+
+.Rectangle {
+  position: absolute;
+  top: 128px;
+  left: 200px;
+}
+
+.navbar {
+  display: inline-flex;
+  justify-content: left;
+  padding-left: 457px;
+  margin-top: 0px;
+  gap: 40px;
+}
+
+.link {
+  list-style: none;
+  text-decoration: none;
+  color: #362e2f;
+  font-size: 16px;
+}
+
+.item {
+  display: flex;
+  margin-top: 52px;
+}
+
+.item:hover {
+  text-decoration: underline;
+}
+
+.elem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 3px solid rgb(20, 20, 20);
+  box-shadow: -2px 3px 4px 1px #ff0000;
+  background-color: rgba(120, 204, 204, 0.658);
+  width: 60%;
+  margin-left: 308px;
+  top: 63px;
+  margin-top: 15px;
+  cursor: url(../src/photos/Cursor.png), auto;
+  position: relative;
+  z-index: 5;
+  transition: all 0.4s;
+}
+
+.elem::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  box-shadow: 2px 2px 3px;
+  transition: all 0.4s;
+}
+.elem:hover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
+  height: 107%;
+  background: rgba(128, 6, 153, 0.171);
+  z-index: 3;
+  transition: all 0.4s;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  gap: 700px;
+}
+
+.elem-2 {
+  width: 60%;
+  margin-left: 308px;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.id::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url("../src/photos/id.png");
+  background-size: cover;
+}
+
+.id {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid rgb(10, 10, 10);
+  border-radius: 10px;
+  margin-top: 15px;
+  position: relative;
+  list-style: none;
+  padding-left: 40px;
+  background-color: rgba(3, 214, 108, 0.37);
+  cursor: pointer;
+}
+
+.email::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url("../src/photos/Vectorlogomail.png");
+  background-size: cover;
+}
+.email {
+  position: relative;
+  list-style: none;
+  padding-left: 40px;
 }
